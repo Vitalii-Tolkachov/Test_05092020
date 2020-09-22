@@ -30,9 +30,7 @@ for item in my_list:
 # Слова с большой буквы и с маленькой это все равно одно и тоже слово 😊
 my_list = my_string.upper()
 my_list = my_list.split()
-my_list = sorted(my_list)
 my_dict = dict()
-tmp = ""
 for item in my_list:
     if my_dict.get(item, 0) == 0:
         my_dict[item] = 1

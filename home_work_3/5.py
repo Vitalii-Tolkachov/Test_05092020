@@ -7,9 +7,9 @@ number1 = input("enter 1 number: ")
 number2 = input("enter 2 number: ")
 
 try:
-    number_tmp = float(number1)
-    number2 = float(number2)
+    float(number1)
+    float(number2)
 except:
     print(str(number1) + str(number2))
 else:
-    print(number_tmp + number2)
+    print(float(number1) + float(number2))

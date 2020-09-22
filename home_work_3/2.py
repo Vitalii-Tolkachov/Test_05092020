@@ -4,7 +4,7 @@
 # Переставьте эти две части местами, результат запишите в новую строку и выведите на экран.
 
 text = input("enter a sting: ")
-
-text2 = text[len(text)//2 + 1 * len(text) % 2:] + text[:len(text)//2 + 1 * len(text) % 2]
+bonus = len(text) % 2
+text2 = text[len(text)//2 + bonus:] + text[:len(text)//2 + bonus]
 
 print(text2)
