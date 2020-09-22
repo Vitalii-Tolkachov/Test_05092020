@@ -18,5 +18,10 @@ text = input("enter a sting: ")
 # В десятой строке выведите все символы в обратном порядке без первого и последнего элемента. //text[-2:0:-1]
 # Ну, и напоследок выведите длину данной строки.
 # PS: Выловите исключения, если введённая строка слишком короткая. Какого типа исключение надо выловить?
-
-print(text[2], text[-2], text[:5], text[:-2], text[::2], text[1::2], text[-1::-1], text[-1::-2], text[-2::-2], text[-2:0:-1], len(text), sep="\n")
+a = True
+while a:
+    try:
+        print(text[2], text[-2], text[:5], text[:-2], text[::2], text[1::2], text[::-1], text[::-2], text[-2::-2], text[-2:0:-1], len(text), sep="\n")
+        a = False
+    except IndexError:
+        text = input("enter a sting: ")

@@ -6,7 +6,7 @@
 while True:
     mess = input("enter no space word: ")
     mess = mess.strip()
-    if ' ' not in mess:
+    if ' ' not in mess and mess.isalpha():
         break
 
 print("Ok")
